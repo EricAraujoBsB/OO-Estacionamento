@@ -11,7 +11,7 @@ public class Estacionamento {
 
     public void CalculoContratante(int vagasContratadas) {
         if (vagasContratadas > capacidade) {
-            System.out.println("Não é possível contratar mais vagas do que a capacidade total do estacionamento.");
+            System.out.println("Não é possível contratar mais vagas.");
         } else {
             vagasOcupadas += vagasContratadas;
             System.out.println("Vagas contratadas com sucesso. Vagas ocupadas: " + vagasOcupadas);
