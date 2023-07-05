@@ -13,6 +13,12 @@ public class Horario {
     this.hora = hora;
     this.minutos = minutos
   }
+  public static int permanenciaNoEstacionamento(Horario entrada, Horario saida){
+    int horarioEnt = entrada.getHora()*60 + entrada.getMinutos();
+    int horarioSaida = saida.getHora()*60 + saida.getMinutos();
+    int permanencia = horarioSaida - horarioEnt;
+    return permanencia;
+  }
   
   public int getHora(){
     return hora;
