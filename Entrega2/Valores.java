@@ -1,4 +1,4 @@
-
+package OOP;
 public class Valores {
 	private int valorFracao,
 				valorCheio,
