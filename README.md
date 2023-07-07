@@ -11,11 +11,11 @@ Eric Gomes de Araújo - 200064053 - https://github.com/EricAraujoBsB,
 
 Emivalto da Costa Tavares Junior - 180100271,
 
-Victor Hugo da Cunha Santos - 211031520,
+Victor Hugo da Cunha Santos - 211031520 - https://github.com/V-Hugo-C,
 
-Ingrid Alves Rocha - 202045348,
+Ingrid Alves Rocha - 202045348, 
 
-Lucas de Oliveira Rodrigues - 202017684
+Lucas de Oliveira Rodrigues - 202017684 - https://github.com/LORliveira
 
 ---
 
