@@ -23,16 +23,16 @@ public class Estacionamento {
 
     public void CalculoContratante(int vagasContratadas) {
         if (vagasContratadas > capacidade) {
-            System.out.println("Não é possível contratar mais vagas.");
+                    string str1 = (string) joptionpane.showinputdialog("Não é possível contratar mais vagas.");
         } else {
             vagasOcupadas += vagasContratadas;
-            System.out.println("Vagas contratadas com sucesso. Vagas ocupadas: " + vagasOcupadas);
+                        string str2 = (string) joptionpane.showinputdialog("Vagas contratadas com sucesso. Vagas ocupadas: " + vagasOcupadas);
         }
     }
 
     public void verificaLotacao() {
         int vagasDisponiveis = capacidade - vagasOcupadas;
-        System.out.println("Vagas disponíveis: " + vagasDisponiveis);
+                    string str3 = (string) joptionpane.showinputdialog("Vagas disponíveis: " + vagasDisponiveis);
     }
 
     public void CadastrarAcesso(String placa, Horario entrada, Horario saida, Data dataEntrada, Data dataSaida) {
@@ -41,11 +41,11 @@ public class Estacionamento {
     
         if ((entrada.getHora() > Hora) || (entrada.getHora() == Hora && entrada.getMinuto() > Minuto)
         || (saida.getHora() > Hora) || (saida.getHora() == Hora && saida.getMinuto() > Minuto)) {
-            System.out.println("Nao e possivel cadastrar o acesso.");
+                        string str4 = (string) joptionpane.showinputdialog("Nao e possivel cadastrar o acesso.");
         } else if (dataEntrada.getDia() > 30 || dataSaida.getDia() > 30) {
-            System.out.println("Nao e possivel cadastrar o acesso.");
+                       string str5 = (string) joptionpane.showinputdialog("Nao e possivel cadastrar o acesso.");
         } else {
-            System.out.println("Acesso cadastrado com sucesso.");
+                       string str6 = (string) joptionpane.showinputdialog("Acesso cadastrado com sucesso.");
         }
     }
     public String getCapacidade(){
