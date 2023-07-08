@@ -14,8 +14,8 @@ public class Estacionamento {
         this.local = local;
         this.vagasOcupadas = 0;
     }
-    public void cadastrarValoresEstacionamento(float valorFracao, float valorDiaria, float valorNoturno, float valorMensal, float valorEvento){
-        valor = new Valores(valorFracao, valorDiaria, valorNoturno, valorMensal, valorEvento);
+    public void cadastrarValoresEstacionamento(float valorFracao,float valorCheio,  float valorDiaria, float valorNoturno, float valorMensal, float valorEvento){
+        valor = new Valores(valorFracao, valorCheio, valorDiaria, valorNoturno, valorMensal, valorEvento);
     }
     public void cadastrarEventos(String nome, Data dataInicio, Data dataFinal, Horario inicio, Horario fim){
         evento = new Evento(nome, dataInicio, dataFinal, inicio, fim);
