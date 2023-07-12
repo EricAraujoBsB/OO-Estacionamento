@@ -75,8 +75,11 @@ public class Estacionamento {
         }
         return false;
     }
-    public String getCapacidade(){
+    public int getCapacidade(){
         return capacidade;
+    }
+    public void setCapacidade(int capacidade){
+        this.capacidade = capacidade;
     }
     public String getLocal(){
         return local;
@@ -84,7 +87,19 @@ public class Estacionamento {
     public String getVagasOcupadas(){
         return vagasOcupadas;
     }
-    public String getValor(){
+    public Valores getValor(){
         return valor;
+    }
+    public Horario getAbrir(){
+        return abrir;
+    }
+    public void setAbrir(Horario abrir){
+        this.abrir = abrir;
+    } 
+    public Horario getFechar(){
+        return fechar;
+    }
+    public void setFechar(Horario fechar){
+        this.fechar = fechar;
     }
 }
