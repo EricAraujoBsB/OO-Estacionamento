@@ -1,23 +1,19 @@
-import java.time.LocalDate;
-import java.time.LocalTime;
-
+package OOP;
 public class Eventos {
     private String nomeEvento;
-    private LocalDate dataInicio;
-    private LocalDate dataFim;
-    private LocalTime horaInicio;
-    private LocalTime horaFim;
-    private int capacidadeMaxima;
+    private Data dataInicio;
+    private Data dataFim;
+    private Horario horaInicio;
+    private Horario horaFim;
 
     private Eventos() {}
 
-    public Eventos(String nomeEvento, LocalDate dataInicio, LocalDate dataFim, LocalTime horaInicio, LocalTime horaFim, int capacidadeMaxima) {
+    public Eventos(String nomeEvento, Data dataInicio, Data dataFim, Horario horaInicio, Horario horaFim) {
         this.nomeEvento = nomeEvento;
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
         this.horaInicio = horaInicio;
         this.horaFim = horaFim;
-        this.capacidadeMaxima = capacidadeMaxima;
     }
 
     public String getNomeEvento() {
@@ -28,43 +24,35 @@ public class Eventos {
         this.nomeEvento = nomeEvento;
     }
 
-    public LocalDate getDataInicio() {
+    public Data getDataInicio() {
         return dataInicio;
     }
 
-    public void setDataInicio(LocalDate dataInicio) {
+    public void setDataInicio(Data dataInicio) {
         this.dataInicio = dataInicio;
     }
 
-    public LocalDate getDataFim() {
+    public Data getDataFim() {
         return dataFim;
     }
 
-    public void setDataFim(LocalDate dataFim) {
+    public void setDataFim(Data dataFim) {
         this.dataFim = dataFim;
     }
 
-    public LocalTime getHoraInicio() {
+    public Horario getHoraInicio() {
         return horaInicio;
     }
 
-    public void setHoraInicio(LocalTime horaInicio) {
+    public void setHoraInicio(Horario horaInicio) {
         this.horaInicio = horaInicio;
     }
 
-    public LocalTime getHoraFim() {
+    public Horario getHoraFim() {
         return horaFim;
     }
 
-    public void setHoraFim(LocalTime horaFim) {
+    public void setHoraFim(Horario horaFim) {
         this.horaFim = horaFim;
-    }
-
-    public int getCapacidadeMaxima() {
-        return capacidadeMaxima;
-    }
-
-    public void setCapacidadeMaxima(int capacidadeMaxima) {
-        this.capacidadeMaxima = capacidadeMaxima;
-    }
+    }   
 }
