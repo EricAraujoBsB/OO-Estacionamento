@@ -5,15 +5,19 @@ public class Valores {
 				valorDiaria,
 				valorNoturno,
 				valorMensal,
-				valorEvento;
+				valorEvento,
+				valorEntrada;
+
 	private Valores() {}
-	public Valores(float v1, float v2, float v3, float v4, float v5, float v6) {
+	public Valores(float v1, float v2, float v3, float v4, float v5, float v6 , float v7) {
 		this.valorFracao = v1;
 		this.valorCheio = v2;
 		this.valorDiaria = v3;
 		this.valorNoturno = v4;
 		this.valorMensal = v5;
 		this.valorEvento = v6;
+		this.valorEntrada = v7;
+
 	}
 	
 	public int getValorFracao() {
@@ -55,6 +59,13 @@ public class Valores {
 		return valorEvento;
 	}
 	public void setValorEvento(float v) {
+		this.valorEvento = v;
+	}
+
+	public int getEntrada() {
+		return valorEntrada;
+	}
+	public void setValorEntrada(float v) {
 		this.valorEvento = v;
 	}
 	

@@ -1,6 +1,6 @@
 package OOP;
 
-public class Horario {
+public class Horario{ 
   private int hora;
   private int minutos;
 
@@ -8,10 +8,11 @@ public class Horario {
 
   public Horario(int hora, int minutos){
     if( hora > 23 || hora < 0 && minutos > 60 || minutos < 0){
-      throw new RuntimeException("\nO Horário inserido é invalido\n");}
-    }else {
+      throw new RuntimeException("\nO Horário inserido é invalido\n");
+    }    else    {
     this.hora = hora;
-    this.minutos = minutos
+    this.minutos = minutos;
+    }
   }
   public static int permanenciaNoEstacionamento(Horario entrada, Horario saida){
     int horarioEnt = entrada.getHora()*60 + entrada.getMinutos();
@@ -33,4 +34,5 @@ public class Horario {
    this.minutos = minutos;
   }
 
-  }
+}
+

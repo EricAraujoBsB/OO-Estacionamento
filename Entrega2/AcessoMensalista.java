@@ -2,7 +2,7 @@ package OOP;
 
 public class AcessoMensalista extends Acesso {
 
-  public AcessoDiaria(String placa, Horario entrada, Horario saida, Data dataEntrada, Data dataSaida, Valores valor,  ){
+  public AcessoMensalista(String placa, Horario entrada, Horario saida, Data dataEntrada, Data dataSaida, Valores valor){
     super(placa, entrada, saida, dataEntrada, dataSaida, valor);
   }
 
