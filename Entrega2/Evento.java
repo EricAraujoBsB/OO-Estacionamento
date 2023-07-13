@@ -1,14 +1,14 @@
 package OOP;
-public class Eventos {
+public class Evento {
     private String nomeEvento;
     private Data dataInicio;
     private Data dataFim;
     private Horario horaInicio;
     private Horario horaFim;
 
-    private Eventos() {}
+    private Evento() {}
 
-    public Eventos(String nomeEvento, Data dataInicio, Data dataFim, Horario horaInicio, Horario horaFim) {
+    public Evento(String nomeEvento, Data dataInicio, Data dataFim, Horario horaInicio, Horario horaFim) {
         this.nomeEvento = nomeEvento;
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
