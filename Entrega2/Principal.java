@@ -45,8 +45,9 @@ public class Principal {
 				}
 			break;
 			case 2:
+				String strAuxiliar = "";
 				for(int i; i>=10; i++) {
-					String strAuxiliar += i + estacionamentoGeral[i].getLocal + "\n";
+						 strAuxiliar += i + estacionamentoGeral[i].getLocal() + "\n";
 				}
 				String strAux = JOptionPane.showInputDialog("Informe a numeracao do estacionamento que deseja editar de acordo com a lista exibida"
 														+ strAuxiliar);
@@ -71,9 +72,9 @@ public class Principal {
 			break;
 			case 3:
 				for(int i; i>=10; i++) {
-					String strAuxiliar = i + estacionamentoGeral[i].getLocal + "\n";
+					 strAuxiliar = i + estacionamentoGeral[i].getLocal() + "\n";
 				}
-				String strAux = JOptionPane.showInputDialog("Informe a numeracao do estacionamento que deseja deletar de acordo com a lista exibida"
+				String StrAux = JOptionPane.showInputDialog("Informe a numeracao do estacionamento que deseja deletar de acordo com a lista exibida"
 														+ strAuxiliar);
 				int auxiliar = Integer.parseInt(strAux);
 				
@@ -109,10 +110,13 @@ public class Principal {
 				Data dataEntrada = new Data(aux6, aux7, aux8);
 				Data dataSaida = new Data(aux9, aux10, aux11);
 				
+				strAuxiliar = "";
 				for(int i; i>=10; i++) {
-					String strAuxiliar = i + estacionamentoGeral[i].getLocal + "\n";
+					if(estacionamentoGeral[i] != null) {
+						strAuxiliar += i + estacionamentoGeral[i].getLocal() + "\n";
+					}
 				}
-				String strAux = JOptionPane.showInputDialog("Informe a numeracao do estacionamento que deseja cadastrar o acesso de acordo com a lista exibida"
+				String StrAux = JOptionPane.showInputDialog("Informe a numeracao do estacionamento que deseja cadastrar o acesso de acordo com a lista exibida"
 														+ strAuxiliar);
 				int auxiliar = Integer.parseInt(strAux);
 				
@@ -121,26 +125,26 @@ public class Principal {
 				JOptionPane.showMessageDialog(null, "Acesso cadastrado com sucesso");
 			break;
 			case 5:
-				String strAux1 = JOptionPane.showInputDialog("Informe o nome do Evento");
-				String strAux2 = JOptionPane.showInputDialog("Informe o ano da data de inicio do evento (somente a numeracao relativa ao ano inteira)");
+				String StrAux1 = JOptionPane.showInputDialog("Informe o nome do Evento");
+				String StrAux2 = JOptionPane.showInputDialog("Informe o ano da data de inicio do evento (somente a numeracao relativa ao ano inteira)");
 				int aux2 = Integer.parseInt(strAux2);
-				String strAux3 = JOptionPane.showInputDialog("Informe o mes que ocorreu o incio do evento(somente numeros)");
+				String StrAux3 = JOptionPane.showInputDialog("Informe o mes que ocorreu o incio do evento(somente numeros)");
 				int aux3 = Integer.parseInt(strAux3);
-				String strAux4 = JOptionPane.showInputDialog("Informe o dia que ocorreu o inicio do evento");
+				String StrAux4 = JOptionPane.showInputDialog("Informe o dia que ocorreu o inicio do evento");
 				int aux4 = Integer.parseInt(strAux4);
-				String strAux5 = JOptionPane.showInputDialog("Informe o ano da data de termino do evento (somente a numeracao relativa ao ano inteira)");
+				String StrAux5 = JOptionPane.showInputDialog("Informe o ano da data de termino do evento (somente a numeracao relativa ao ano inteira)");
 				int aux5 = Integer.parseInt(strAux5);
-				String strAux6 = JOptionPane.showInputDialog("Informe o mes que ocorreu o termino do evento(somente numeros)");
+				String StrAux6 = JOptionPane.showInputDialog("Informe o mes que ocorreu o termino do evento(somente numeros)");
 				int aux6 = Integer.parseInt(strAux6);
-				String strAux7 = JOptionPane.showInputDialog("Informe o dia que ocorreu o termino do evento");
+				String StrAux7 = JOptionPane.showInputDialog("Informe o dia que ocorreu o termino do evento");
 				int aux7 = Integer.parseInt(strAux7);
-				String strAux8 = JOptionPane.showInputDialog("Informe a hora de inicio do evento (somente a hora inteira)");
+				String StrAux8 = JOptionPane.showInputDialog("Informe a hora de inicio do evento (somente a hora inteira)");
 				int aux8 = Integer.parseInt(strAux8);
-				String strAux9 = JOptionPane.showInputDialog("Informe os minutos de inicio do evento");
+				String StrAux9 = JOptionPane.showInputDialog("Informe os minutos de inicio do evento");
 				int aux9 = Integer.parseInt(strAux9);
-				String strAux10 = JOptionPane.showInputDialog("Informe a hora da saida do evento (somente a hora inteira)");
+				String StrAux10 = JOptionPane.showInputDialog("Informe a hora da saida do evento (somente a hora inteira)");
 				int aux10 = Integer.parseInt(strAux10);
-				String strAux11 = JOptionPane.showInputDialog("Informe os minutos de termino do evento");
+				String StrAux11 = JOptionPane.showInputDialog("Informe os minutos de termino do evento");
 				int aux11 = Integer.parseInt(strAux11);
 				
 				Data dataInicio = new Data(aux2, aux3, aux4);
@@ -148,12 +152,15 @@ public class Principal {
 				Horario horaInicio = new Horario(aux8, aux9);
 				Horario horaFim = new Horario(aux10, aux11);
 				
+				strAuxiliar = "";
 				for(int i; i>=10; i++) {
-					String strAuxiliar = i + estacionamentoGeral[i].getLocal + "\n";
+					if(estacionamentoGeral[i] != null) {
+						strAuxiliar += i + estacionamentoGeral[i].getLocal() + "\n";
+					}
 				}
 				String strAux = JOptionPane.showInputDialog("Informe a numeracao do estacionamento que deseja cadastrar o evento de acordo com a lista exibida"
 														+ strAuxiliar);
-				int auxiliar = Integer.parseInt(strAux);
+					auxiliar = Integer.parseInt(strAux);
 				
 				estacionamentoGeral[auxiliar].cadastrarEvento(strAux1, dataInicio, dataFim, horaInicio, horaFim);
 				
