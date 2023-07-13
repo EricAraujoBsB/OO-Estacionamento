@@ -33,7 +33,7 @@ public class Acesso {
     return placa;
   }
   public void setPlaca(String placa){
-    this.placa = placa 
+    this.placa = placa;
   }
   public String getHorarioEntrada(){
     return entrada;
