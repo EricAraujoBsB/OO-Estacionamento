@@ -29,29 +29,29 @@ public class Estacionamento {
 
     public void CalculoContratante(int vagasContratadas) {
         if (vagasContratadas > capacidade) {
-                    string str1 = (string) joptionpane.showinputdialog("Não é possível contratar mais vagas.");
+                    String str1 = (String) JOptionPane.showInputDialog("Não é possível contratar mais vagas.");
         } else {
             vagasOcupadas += vagasContratadas;
-                        string str2 = (string) joptionpane.showinputdialog("Vagas contratadas com sucesso. Vagas ocupadas: " + vagasOcupadas);
+                        String str2 = (String) JOptionPane.showInputDialog("Vagas contratadas com sucesso. Vagas ocupadas: " + vagasOcupadas);
         }
     }
 
     public void verificaLotacao() {
         int vagasDisponiveis = capacidade - vagasOcupadas;
-                    string str3 = (string) joptionpane.showinputdialog("Vagas disponíveis: " + vagasDisponiveis);
+                    String str3 = (String) JOptionPane.showInputDialog("Vagas disponíveis: " + vagasDisponiveis);
     }
 
     public void CadastrarAcesso(String placa, Horario entrada, Horario saida, Data dataEntrada, Data dataSaida) {
         int Hora = 18; 
         int Minuto = 0;
     
-        if ((entrada.getHora() > Hora) || (entrada.getHora() == Hora && entrada.getMinuto() > Minuto)
-        || (saida.getHora() > Hora) || (saida.getHora() == Hora && saida.getMinuto() > Minuto)) {
-                        string str4 = (string) joptionpane.showinputdialog("Nao e possivel cadastrar o acesso.");
+        if ((entrada.getHora() > Hora) || (entrada.getHora() == Hora && entrada.getMinutos() > Minuto)
+        || (saida.getHora() > Hora) || (saida.getHora() == Hora && saida.getMinutos() > Minuto)) {
+                        String str4 = (String) JOptionPane.showInputDialog("Nao e possivel cadastrar o acesso.");
         } else if (dataEntrada.getDia() > 30 || dataSaida.getDia() > 30) {
-                       string str5 = (string) joptionpane.showinputdialog("Nao e possivel cadastrar o acesso.");
+                       String str5 = (String) JOptionPane.showInputDialog("Nao e possivel cadastrar o acesso.");
         } else {
-                       string str6 = (string) joptionpane.showinputdialog("Acesso cadastrado com sucesso.");
+                       String str6 = (String) JOptionPane.showInputDialog("Acesso cadastrado com sucesso.");
         }
     }
     public boolean acessoEvento(ArrayList<Evento> eventos, Data dataAcesso){
