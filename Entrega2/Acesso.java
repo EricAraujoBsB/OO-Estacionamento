@@ -35,13 +35,13 @@ public class Acesso {
   public void setPlaca(String placa){
     this.placa = placa;
   }
-  public String getHorarioEntrada(){
+  public Horario getHorarioEntrada(){
     return entrada;
   }
   public void setHorarioEntrada(Horario entrada){
     this.entrada = entrada;
   }
-  public String getHorarioSaida(){
+  public Horario getHorarioSaida(){
     return saida;
   }
   public void setHorarioSaida(Horario saida){

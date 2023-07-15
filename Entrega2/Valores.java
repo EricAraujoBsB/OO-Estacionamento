@@ -17,52 +17,52 @@ public class Valores {
 		this.valorMensal = v5;
 		this.valorEvento = v6;
 		this.valorEntrada = v7;
-
+		//do que se trata o valorEntrada @EricAraujoBsB
 	}
 	
-	public int getValorFracao() {
+	public float getValorFracao() {
 		return valorFracao;
 	}
 	public void setValorFracao(float v) {
 		this.valorFracao = v;
 	}
 	
-	public int getValorCheio() {
+	public float getValorCheio() {
 		return valorCheio;
 	}
 	public void setValorCheio(float v) {
 		this.valorCheio = v;
 	}
 	
-	public int getValorDiaria() {
+	public float getValorDiaria() {
 		return valorDiaria;
 	}
 	public void setValorDiaria(float v) {
 		this.valorDiaria = v;
 	}
 	
-	public int getValorNoturno() { 
+	public float getValorNoturno() { 
 		return valorNoturno;
 	}
 	public void setValorNoturno(float v) {
 		this.valorNoturno = v;
 	}
 	
-	public int getValorMensal() {
+	public float getValorMensal() {
 		return valorMensal;
 	}
 	public void setValorMensal(float v) {
 		this.valorMensal = v;
 	}
 	
-	public int getValorEvento() {
+	public float getValorEvento() {
 		return valorEvento;
 	}
 	public void setValorEvento(float v) {
 		this.valorEvento = v;
 	}
 
-	public int getEntrada() {
+	public float getEntrada() {
 		return valorEntrada;
 	}
 	public void setValorEntrada(float v) {

@@ -21,7 +21,8 @@ public class Estacionamento {
         this.fechar = fechar;
     }
     public void cadastrarValoresEstacionamento(float valorFracao,float valorCheio,  float valorDiaria, float valorNoturno, float valorMensal, float valorEvento){
-        valor = new Valores(valorFracao, valorCheio, valorDiaria, valorNoturno, valorMensal, valorEvento);
+        //construtor de valores requisita um valor de entrada @EricAraujoBsB
+    	valor = new Valores(valorFracao, valorCheio, valorDiaria, valorNoturno, valorMensal, valorEvento);
     }
     public void cadastrarEventos(String nome, Data dataInicio, Data dataFinal, Horario inicio, Horario fim){
         eventos.add( new Evento(nome, dataInicio, dataFinal, inicio, fim));
@@ -84,8 +85,10 @@ public class Estacionamento {
     public String getLocal(){
         return local;
     }
+// instanciar metodo 'setLocal' @EricAraujoBsB
     public String getVagasOcupadas(){
-        return vagasOcupadas;
+        //DownCasting int to Str @EricAraujoBsB
+    	return vagasOcupadas;
     }
     public Valores getValor(){
         return valor;
