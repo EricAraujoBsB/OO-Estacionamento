@@ -21,7 +21,6 @@ public class Estacionamento {
         this.fechar = fechar;
     }
     public void cadastrarValoresEstacionamento(float valorFracao,float valorCheio,  float valorDiaria, float valorNoturno, float valorMensal, float valorEvento){
-        //construtor de valores requisita um valor de entrada @EricAraujoBsB
     	valor = new Valores(valorFracao, valorCheio, valorDiaria, valorNoturno, valorMensal, valorEvento);
     }
     public void cadastrarEventos(String nome, Data dataInicio, Data dataFinal, Horario inicio, Horario fim){
@@ -42,7 +41,7 @@ public class Estacionamento {
                     String str3 = (String) JOptionPane.showInputDialog("Vagas disponíveis: " + vagasDisponiveis);
     }
 
-    public void CadastrarAcesso(String placa, Horario entrada, Horario saida, Data dataEntrada, Data dataSaida) {
+    public void cadastrarAcesso(String placa, Horario entrada, Horario saida, Data dataEntrada, Data dataSaida) {
         int Hora = 18; 
         int Minuto = 0;
     
@@ -85,9 +84,10 @@ public class Estacionamento {
     public String getLocal(){
         return local;
     }
-// instanciar metodo 'setLocal' @EricAraujoBsB
-    public String getVagasOcupadas(){
-        //DownCasting int to Str @EricAraujoBsB
+    public void setLocal (String local) {
+    	this.local = local;
+    }
+    public int getVagasOcupadas(){
     	return vagasOcupadas;
     }
     public Valores getValor(){

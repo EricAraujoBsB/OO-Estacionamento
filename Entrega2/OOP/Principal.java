@@ -1,3 +1,4 @@
+package OOP;
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
 
@@ -18,6 +19,7 @@ public class Principal {
 				String strC = JOptionPane.showInputDialog("Informe a Capacidade máxima do Estacionamento");
 				int capacidade = Integer.parseInt(strC);
 				String strLocal = JOptionPane.showInputDialog("Informe o local do Evento");
+				
 				
 				//Construtor de Estacionamento agora precisa de horario entrada/horario saida @EricAraujoBsB
 				//requisitar horarios do usuario @EricAraujoBsB
@@ -166,7 +168,7 @@ public class Principal {
 					auxiliar = Integer.parseInt(strAux);
 					
 					//verificar ordem das entradas do metodo cadastrarEvento em Estacionamento @EricAraujoBsB
-				estacionamentoGeral[auxiliar].cadastrarEvento(strAux1, dataInicio, dataFim, horaInicio, horaFim);
+				estacionamentoGeral[auxiliar].cadastrarEventos(strAux1, dataInicio, dataFim, horaInicio, horaFim);
 				
 				JOptionPane.showMessageDialog(null, "evento cadastrado com sucesso");
 			break;

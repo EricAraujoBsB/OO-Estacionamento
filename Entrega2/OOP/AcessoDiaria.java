@@ -10,10 +10,14 @@ public class AcessoDiaria extends Acesso {
   @Override
   // rever metodo calcularValor @EricAraujoBsB
   public float calcularValor(Valores valor, Horario entrada, Horario saida) {
-    if((getEntrada.getHora() >= fechar.getHora() && getEntrada.getMinuto() >= fechar.getMinuto())
+    if (entrada.getHora()>=19 && saida.getHora()<=8) {
+    	return valor.getValorNoturno();
+    }
+	  /*if((getEntrada.getHora() >= fechar.getHora() && getEntrada.getMinuto() >= fechar.getMinuto())
         && (getSaida.getHora() <= abrir.getHora() && getSaida.getMinuto() <= abrir.getMinuto())) {
       return valor.getValorNoturno();
-    }else {
+    }*/
+    else {
       return valor.getValorDiaria();
     }
   }
